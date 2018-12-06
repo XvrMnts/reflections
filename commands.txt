@@ -1,0 +1,9 @@
+git log -stat
+git diff <cid> <cid>
+git checkout <cid>   # revert to cid
+git checkout master  # revert to last verstion
+git status    #  which files have changed since last commit
+git init             ## initialize a repository
+git add <file>       # add file to staging area (move from working to staging)
+git commit -m ".."   # move from stage to repository
+git rm --cached      # unstage: remove from stage
