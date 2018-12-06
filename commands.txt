@@ -1,9 +1,12 @@
 git log -stat
-git diff <cid> <cid>
+git diff <cid> <cid>    # differences between two commits
+git diff                # differences between working and staging
+git diff --staged      # differences between staging and most recent commit
 git checkout <cid>   # revert to cid
 git checkout master  # revert to last verstion
 git status    #  which files have changed since last commit
 git init             ## initialize a repository
-git add <file>       # add file to staging area (move from working to staging)
-git commit -m ".."   # move from stage to repository
+git add <file>       # add file to staging area (copy from working to staging)
+git commit -m ".."   # copy from stage to repository.  files are'nt removed from stage
 git rm --cached      # unstage: remove from stage
+git reset --hard     # discard changes in working directory and staging area
