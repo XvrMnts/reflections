@@ -9,4 +9,5 @@ git init             ## initialize a repository
 git add <file>       # add file to staging area (copy from working to staging)
 git commit -m ".."   # copy from stage to repository.  files are'nt removed from stage
 git rm --cached      # unstage: remove from stage
-git reset --hard     # discard changes in working directory and staging area
+git reset --hard     # discard changes in working directory and staging area. Last commit is copied from repo 
+                     # to stage and working...
